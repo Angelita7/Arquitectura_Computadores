@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    18:53:46 10/11/2016 
+-- Create Date:    17:06:51 10/14/2016 
 -- Design Name: 
--- Module Name:    nPC - Behavioral 
+-- Module Name:    Pc_Counter - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -31,31 +31,29 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity nPC is
-    Port ( clk  : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           sumaOut  : in  STD_LOGIC_VECTOR (31 downto 0);
-           nPC_salida : out  STD_LOGIC_VECTOR (31 downto 0));
-end nPC;
+entity Pc_Counter is
+    Port ( reset : in  STD_LOGIC;
+           PC_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           clk : in  STD_LOGIC;
+           PC_out : out  STD_LOGIC_VECTOR (31 downto 0));
+end Pc_Counter;
 
-architecture Behavioral of nPC is
-
-begin
-
-process (clk,reset,sumaOut)
+architecture Behavioral of Pc_Counter is
 
 begin
 
-if reset='1'  then
+process (reset,PC_in,clk)
 
-		 nPC_salida <= ( others=> '0' );
- else		
-     if (rising_edge (clk))then
-				  nPC_salida <= sumaOut;
-			end if;
-	end if ;
-	
-	end  process ;
+begin
+
+if(rising_edge(clk)) then
+if reset='1' then
+PC_out<=x"00000000";
+else
+PC_out<=PC_in;
+end if;
+end if;
+end process;
 
 
 end Behavioral;

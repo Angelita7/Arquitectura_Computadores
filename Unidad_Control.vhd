@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    18:53:46 10/11/2016 
+-- Create Date:    17:52:38 10/14/2016 
 -- Design Name: 
--- Module Name:    nPC - Behavioral 
+-- Module Name:    Unidad_Control - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -31,31 +31,15 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity nPC is
-    Port ( clk  : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           sumaOut  : in  STD_LOGIC_VECTOR (31 downto 0);
-           nPC_salida : out  STD_LOGIC_VECTOR (31 downto 0));
-end nPC;
+entity Unidad_Control is
+    Port ( op : in  STD_LOGIC_VECTOR (1 downto 0);
+           op3 : in  STD_LOGIC_VECTOR (5 downto 0);
+           Out_Unidad_control : out  STD_LOGIC_VECTOR (5 downto 0));
+end Unidad_Control;
 
-architecture Behavioral of nPC is
-
-begin
-
-process (clk,reset,sumaOut)
+architecture Behavioral of Unidad_Control is
 
 begin
-
-if reset='1'  then
-
-		 nPC_salida <= ( others=> '0' );
- else		
-     if (rising_edge (clk))then
-				  nPC_salida <= sumaOut;
-			end if;
-	end if ;
-	
-	end  process ;
 
 
 end Behavioral;

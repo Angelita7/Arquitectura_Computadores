@@ -1,0 +1,5 @@
+set -tmpdir "F:/Arquitectura_Computadores-master/xst/projnav.tmp"
+set -xsthdpdir "F:/Arquitectura_Computadores-master/xst"
+elaborate
+-ifn nPC.prj
+-ifmt mixed

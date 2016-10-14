@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    18:53:46 10/11/2016 
+-- Create Date:    17:35:56 10/14/2016 
 -- Design Name: 
--- Module Name:    nPC - Behavioral 
+-- Module Name:    Register_File - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -31,31 +31,25 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity nPC is
-    Port ( clk  : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           sumaOut  : in  STD_LOGIC_VECTOR (31 downto 0);
-           nPC_salida : out  STD_LOGIC_VECTOR (31 downto 0));
-end nPC;
+entity Register_File is
+    Port ( rsd1 : in  STD_LOGIC_VECTOR (4 downto 0);
+           rsd2 : in  STD_LOGIC_VECTOR (4 downto 0);
+           rd : in  STD_LOGIC_VECTOR (4 downto 0);
+           Out_Alu : in  STD_LOGIC_VECTOR (31 downto 0);
+           contenido_registro1 : out  STD_LOGIC_VECTOR (31 downto 0);
+           contenido_registro2 : out  STD_LOGIC_VECTOR (31 downto 0));
+end Register_File;
 
-architecture Behavioral of nPC is
-
-begin
-
-process (clk,reset,sumaOut)
+architecture Behavioral of Register_File is
 
 begin
 
-if reset='1'  then
+process (rsd1,rsd2,rd,Out_Alu)
 
-		 nPC_salida <= ( others=> '0' );
- else		
-     if (rising_edge (clk))then
-				  nPC_salida <= sumaOut;
-			end if;
-	end if ;
-	
-	end  process ;
+begin
+
+
+
 
 
 end Behavioral;
