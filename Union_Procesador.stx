@@ -1,0 +1,45 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/Desktop/Angela/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> Parameter xsthdpdir set to D:/Desktop/Angela/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.31 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Desktop/Angela/Sumador.vhd" in Library work.
+Architecture behavioral of Entity sumador is up to date.
+Compiling vhdl file "D:/Desktop/Angela/nPC.vhd" in Library work.
+Architecture behavioral of Entity npc is up to date.
+Compiling vhdl file "D:/Desktop/Angela/Instruction_Memory.vhd" in Library work.
+Architecture behavioral of Entity instruction_memory is up to date.
+Compiling vhdl file "D:/Desktop/Angela/Unidad_Control.vhd" in Library work.
+Architecture behavioral of Entity unidad_control is up to date.
+Compiling vhdl file "D:/Desktop/Angela/Register_File.vhd" in Library work.
+Architecture behavioral of Entity register_file is up to date.
+Compiling vhdl file "D:/Desktop/Angela/Union_Procesador.vhd" in Library work.
+Entity <union_procesador> compiled.
+Entity <Union_Procesador> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.50 secs
+ 
+--> 
+
+Total memory usage is 166616 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/utp.CRIE/Desktop/Arquitectura_Computadores-master/nPC_test_isim_beh.exe" -prj "C:/Users/utp.CRIE/Desktop/Arquitectura_Computadores-master/nPC_test_beh.prj" "work.nPC_test" 
+-intstyle "ise" -incremental -o "D:/Desktop/Angela/Tb_Union_Procesador_isim_beh.exe" -prj "D:/Desktop/Angela/Tb_Union_Procesador_beh.prj" "work.Tb_Union_Procesador" 

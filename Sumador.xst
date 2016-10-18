@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/utp/Documents/Trabajo Procesador/procesador_1/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/utp/Documents/Trabajo Procesador/procesador_1/xst"
+set -tmpdir "D:/Desktop/Angela/xst/projnav.tmp"
+set -xsthdpdir "D:/Desktop/Angela/xst"
 elaborate
 -ifn Sumador.prj
 -ifmt mixed
